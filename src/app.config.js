@@ -14,7 +14,7 @@ export default {
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
+        "text": "角色",
         "iconPath": "./assets/tab-bar/house.png",
         "selectedIconPath": "./assets/tab-bar/house.png"
       },
