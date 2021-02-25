@@ -3,7 +3,7 @@ export default {
     'pages/index/index',
     'pages/detail/index',
     'pages/tool/index',
-    'pages/animal/index',
+    'pages/ginger/index',
     'pages/npc/index',
   ],
   tabBar: {
@@ -14,7 +14,7 @@ export default {
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "角色",
+        "text": "首页",
         "iconPath": "./assets/tab-bar/house.png",
         "selectedIconPath": "./assets/tab-bar/house.png"
       },
@@ -25,17 +25,17 @@ export default {
         "selectedIconPath": "./assets/tab-bar/hoe.png"
       },
       {
-        "pagePath": "pages/animal/index",
-        "text": "动物",
-        "iconPath": "./assets/tab-bar/white_chicken.png",
-        "selectedIconPath": "./assets/tab-bar/brown_chicken.png"
-      },
-      {
         "pagePath": "pages/npc/index",
         "text": "NPC",
         "iconPath": "./assets/tab-bar/npc.png",
         "selectedIconPath": "./assets/tab-bar/npc.png"
       },
+      {
+        "pagePath": "pages/ginger/index",
+        "text": "姜岛",
+        "iconPath": "./assets/tab-bar/Golden_Walnut.png",
+        "selectedIconPath": "./assets/tab-bar/Golden_Walnut.png"
+      }
     ]
   },
   window: {

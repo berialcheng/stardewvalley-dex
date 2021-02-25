@@ -25,7 +25,7 @@ async function callCloudDatabase(key) {
       .where({
         _id: key
       }).get();
-    if (resp.data.length >= 0) {
+    if (resp.data.length > 0) {
       return resp.data[0].parse.text['*'];
     }
   }

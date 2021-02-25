@@ -1,0 +1,20 @@
+.detail-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  //padding: 16rpx;
+  /* border-bottom: #000000 2px solid; */
+  box-shadow: 1PX 1PX 2PX #d5d5d5;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color:white;
+
+  margin-left: 0px;
+  // 垂直对齐方式
+  align-items:center;
+}
+
+.detail-container-placeholder {
+  height: 2rpx;
+  margin-top: 130rpx;
+}
