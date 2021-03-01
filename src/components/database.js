@@ -1,6 +1,7 @@
+import Taro from '@tarojs/taro'
 import {bleach} from "./mpHtml";
 import {getCacheData, setCacheData} from "./cache"
-import Taro from '@tarojs/taro'
+
 
 async function callCloudFunction(key) {
   if (typeof qq !== 'undefined' && qq.cloud) {
@@ -46,4 +47,11 @@ export async function fetchData(key) {
 
   setCacheData(key, bleach(resp));
   return getCacheData(key);
+}
+
+export async function queryData(key) {
+  let resp = await Taro.request({
+    url: `https://stardewvalley-5g8bi0xq0651d03e-1304966148.ap-shanghai.app.tcloudbase.com/queryStardew?search=${key}`,
+  });
+  return resp.data;
 }

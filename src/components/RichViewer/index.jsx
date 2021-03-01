@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import Taro, {getCurrentInstance} from '@tarojs/taro'
 import {AtNavBar, AtButton} from 'taro-ui'
 import {View, Text, Image, Slot} from '@tarojs/components'
-import {tagStyle} from "../../component/mpHtml";
-import {fetchData} from "../../component/database";
+import {tagStyle} from "../mpHtml";
+import {fetchData} from "../database";
 import './index.scss'
 
 import "../../../node_modules/taro-ui/dist/style/components/flex.scss";
@@ -164,7 +164,8 @@ export default class RichViewer extends Component {
       _this.setState({
         key: key,
         content: c,
-        loading: false
+        loading: false,
+        hasError: false
       })
     } catch (e) {
       console.error(e);

@@ -5,6 +5,7 @@ export default {
     'pages/tool/index',
     'pages/ginger/index',
     'pages/npc/index',
+    'pages/query/index',
   ],
   tabBar: {
     "color": "#B2B2B2",
@@ -35,6 +36,12 @@ export default {
         "text": "姜岛",
         "iconPath": "./assets/tab-bar/Golden_Walnut.png",
         "selectedIconPath": "./assets/tab-bar/Golden_Walnut.png"
+      },
+      {
+        "pagePath": "pages/query/index",
+        "text": "搜索",
+        "iconPath": "./assets/tab-bar/search.png",
+        "selectedIconPath": "./assets/tab-bar/search.png"
       }
     ]
   },

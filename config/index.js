@@ -1,3 +1,5 @@
+import path from "path";
+
 const config = {
   projectName: 'stardewvalley-dex',
   date: '2021-2-7',
@@ -12,6 +14,10 @@ const config = {
   outputRoot: `dist/${process.env.TARO_ENV}`,
   plugins: [],
   defineConstants: {
+  },
+  alias: {
+    '@styles': path.resolve(__dirname, '..', 'src/styles'),
+    '@components': path.resolve(__dirname, '..', 'src/components'),
   },
   copy: {
     patterns: [
